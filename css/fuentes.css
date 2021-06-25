@@ -19,6 +19,11 @@ p.fuente-net{
     font-family: 'Alatsi', sans-serif;
     text-align: center;
 }
+span{
+    font-size: 1.8em;
+    color: red;
+    font-weight: 900;
+}
 /* alatsi-regular - latin */
 @font-face {
     font-family: 'Alatsi';
