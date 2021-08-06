@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="fuentes.html">Fuentes</a></li>
+        <li><a href="listas.html">Listas</a></li>
+        <li><a href="colores.html">Colores</a></li>
+        <li><a href="alineacion.html">Alineacion</a></li>
+        <li><a href="spacing.html">Spacing</a></li>
+        <li><a href="indent-blockquote.html">Texto identificado y citas en bloque</a></li>
+        <li><a href="margin-border-padding.html">Margins, borders and padding</a></li>
+        <li><a href="imagenes.html">Imagenes</a></li>
+        <li><a href="tablas.html">Tablas</a></li>
+        <li><a href="formulario.html">Formularios</a></li>
+    </ul>
+    <h1>Citas medicas</h1>
+    <form>
+        <fieldset>  
+            <div class="box-formulario">
+                <!-- <label> Ingrese sus Nombres</label><br>-->
+                <input class="controls" type="text" name="Nombres" placeholder="ingrese sus nombres"><br>
+                <!--<label> Ingrese sus Apellidos</label><br>-->
+                <input class="controls" type="text" name="Apellidos" placeholder="ingrese sus apellidos"><br>
+                <!--<label >Observaciones</label> <br>-->
+                <textarea class="controls-check" name="observaciones"cols="40" rows="5" maxlength="200" placeholder="Observaciones(Max. 200 caracteres)"></textarea><br>
+                <label>Ver Dias Disponibles</label><br><br>
+                <label></label><input class="controls-check" type="checkbox" value="lunes" >Lunes</label><br>
+                <label></label><input class="controls-check" type="checkbox" value="martes" >Martes</label><br>
+                <label></label><input class="controls-check" type="checkbox" value="miercoles" >Miercoles</label><br>
+                <label></label><input class="controls-check" type="checkbox" value="jueves" >Jueves</label><br>
+                <label></label><input class="controls-check" type="checkbox" value="viernes" >Viernes</label><br>
+                <label>IPS de atencion</label><br><br>
+                <label> <input type="radio" name="IPS">IPS Centro</label><br><br>
+                <label> <input type="radio" name="IPS">IPS Agua Blanca</label><br><br>
+                <label> <input type="radio" name="IPS">IPS Calamo</label><br><br>
+                <label> <input type="radio" name="IPS">IPS Solarte</label><br><br>
+                <label>Seleccione un medico</label><br><br>
+                <select class="controls" name="medico">
+                        <option value="liliana-gomez">Liliana Yisela </option>
+                        <option value="jhon-alex-castano">Jhon Alex Castaño </option>
+                        <option value="kevin ijaji">Kevin Steven Ijaji </option>
+                         <option value="juan-vargas">Juan Sebastian Vargas </option>
+                 </select><br>
+                 <input class="controls-button" type="submit" value="enviar"><br>
+            </div>
+        </fieldset>
+        
+    </form>
+</body>
+</html>
