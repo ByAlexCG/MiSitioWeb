@@ -1,0 +1,60 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+nav
+{
+    position: fixed;
+    /* width: 250px; */
+    background-color:  red;
+    height: 100%;
+    width: 300px;
+    top: 0;
+
+}
+ul
+{
+    list-style: none;
+    background-color:  red;
+    top: 40px;
+    left: 30px;
+    width: 100%;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb( 64,64,64,.8);
+    font-size: 1.2em;
+    display: block;
+    border-radius: 5px;
+    padding: 35px;
+}
+a:hover{
+    background:gainsboro;
+}
+.main-content
+{
+     margin:40px 40px 40px 320px;
+     text-align: justify;
+}
+p
+{
+    font-size: 1.5em;
+    line-height: 1.6em;
+
+}
+.fas, .fad
+{
+    width: 30px;
+    font-size: 1.2em;
+}
+i
+{
+    padding-right: 30px;
+}
+.linea-item
+{
+    border-top: 1px solid rgb(48,48,48,.6);
+    border-radius: 0;
+}
