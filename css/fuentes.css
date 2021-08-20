@@ -1,0 +1,92 @@
+p{
+    font-family: 'Signika Negative', sans-serif;
+}
+h1{
+    font-size: 70px;
+}
+h2{
+    font-weight: 900;
+}
+h3{
+    font-style: italic;
+}
+p.fuente-net{
+    font-family: 'Alatsi', sans-serif;
+}
+.fuente-net2{
+    color: red;
+    font-size: 100px;
+    font-family: 'Alatsi', sans-serif;
+    text-align: center;
+}
+span{
+    font-size: 1.8em;
+    color: red;
+    font-weight: 900;
+}
+/* alatsi-regular - latin */
+@font-face {
+    font-family: 'Alatsi';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/alatsi-v2-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/alatsi-v2-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/alatsi-v2-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/alatsi-v2-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/alatsi-v2-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/alatsi-v2-latin-regular.svg#Alatsi') format('svg'); /* Legacy iOS */
+  }
+  *
+{
+    margin: 0;
+    padding: 0;
+}
+nav
+{
+    cursor: pointer;
+    padding: 0;
+}
+ul
+{
+    list-style: none;
+    position:absolute;
+    background: darkred;
+    width: 100%;
+
+}
+a
+{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0 2.5em;
+    
+}
+.item
+{
+    line-height: 3em;
+    display: inline-block;
+    position: relative;
+    text-align: right;
+
+}
+
+a:hover
+{
+    background: rgb(59, 1, 1);
+    transition: all 3s;
+}
+.sub-item
+{
+    text-align: center;
+    transition: all 1.5s ;
+    max-height: 0;
+    background: darkred;
+}
+.item:hover .sub-item
+{
+    display: block;
+    max-height: 500px;
+    border-bottom: 1px solid white;
+}
