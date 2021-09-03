@@ -7,7 +7,7 @@ nav
 {
     position: fixed;
     /* width: 250px; */
-    background-color:  red;
+    /*background-color:  red;*/
     height: 100%;
     width: 300px;
     top: 0;
@@ -16,7 +16,7 @@ nav
 ul
 {
     list-style: none;
-    background-color:  red;
+    /*background-color:  red;*/
     top: 40px;
     left: 30px;
     width: 100%;
