@@ -1,0 +1,35 @@
+/*resetear pagina*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.main
+{
+    background-image: url("../img/Sin\ título.png");
+    width: 95%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position:right bottom;
+}
+body
+{
+    background-image:url("../img/Japon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+@media only screen and (max-width:800px){
+    body{
+        background-image:url("../img/japon2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media only screen and (max-width:600px){
+    body{
+        background-image:url("../img/Japon3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

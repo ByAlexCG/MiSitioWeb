@@ -1,0 +1,13 @@
+resetear pagina
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-image:url(../img/Japon.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
