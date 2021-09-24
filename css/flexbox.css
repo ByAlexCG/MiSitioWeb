@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-content{
+    width: 90%;
+    border: 2px solid rgb(64,64,64,8);
+    margin: 20px auto;
+}
+.container-flex-1{
+    display: flex;
+    flex-direction: column;
+    background: darkred;
+
+}
+.container-flex-2{
+    display: flex;
+    flex-direction: row;
+    background: darkred;
+
+}
+.container-flex-3{
+    display: flex;
+    flex-wrap: wrap;
+    background: darkred;
+
+}
+.container-flex-4{
+    display: flex;
+    flex-wrap: nowrap;
+    background: darkred;
+
+}
+.container-flex-5{
+    display: flex;
+    justify-content: space-between;
+    background: darkred;
+
+}
+.container-flex-6{
+    display: flex;
+    justify-content: space-around;
+    background: darkred;
+
+}
+.container-flex-7{
+    display: flex;
+    justify-content: space-evenly;
+    background: darkred;
+
+}
+.container-flex-8{
+    display: flex;
+    justify-content: flex-start;
+    background: darkred;
+
+}
+.container-flex-9{
+    display: flex;
+    justify-content: flex-end;
+    background: darkred;
+
+}
+.container-flex-10{
+    display: flex;
+    justify-content: center;
+    background: darkred;
+
+}
+.container-flex-11{
+    display: flex;
+    height: 600px;
+    align-items: flex-start;
+    background: darkred;
+
+}
+.container-flex-12{
+    display: flex;
+    height: 600px;
+    align-items: flex-end;
+    background: darkred;
+
+}
+.container-flex-13{
+    display: flex;
+    height: 600px;
+    align-items:center;
+    justify-content: center;
+    background: darkred;
+
+}
+.container-flex-14{
+    display: flex;
+    height: 600px;
+    align-items:center;
+    justify-content: center;
+    background: darkred;
+
+}
+
+.item-flex{
+    width: 200px;
+    height: 200px;
+    background-color:goldenrod ;
+    color: white;
+    font-size: 1.5em;
+    margin: 20px;
+}
