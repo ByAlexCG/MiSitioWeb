@@ -9,6 +9,7 @@ nav{
     /* margin-top: 25px; */
     background: rgba(169, 169, 169, 0.8);
     padding: 20px;
+    z-index: 5;
 }
 ul{
     text-align: right;
@@ -45,6 +46,12 @@ p{
 h2{
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 3em;
+    
     
 
+}
+.box-tokyo{
+    margin-top: 20px;
 }
