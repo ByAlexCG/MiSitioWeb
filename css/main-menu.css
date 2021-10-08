@@ -44,6 +44,7 @@ a:hover
     transition: all 1.5s ;
     max-height: 0;
     background: darkred;
+    position: relative;
 }
 .item:hover .sub-item
 {

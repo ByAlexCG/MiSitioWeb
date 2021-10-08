@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.calendario{
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction:column ;
+    justify-content:center ;
+    align-items: center;
+}
+.mes{
+    display: grid;
+    grid-template-columns: repeat(7.1fr);
+    gap: 10px;
+    width: 90px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+.nombre-mes{
+    grid-column-start: 1;
+    grid-column-end: 8;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.9em;
+    padding-bottom: .5em;
+    border-bottom: 2px solid darkred;
+}
+.dia-semana-nombre, .dia-habil, .hollyday{
+display: block;
+}
