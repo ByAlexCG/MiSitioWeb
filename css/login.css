@@ -142,7 +142,7 @@ p a:hover {
     body {
         background-image: url(../img/Fondo_Login-700.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover;     
     }
 
     .main-content {
