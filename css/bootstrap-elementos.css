@@ -1,0 +1,50 @@
+.box-1{
+    background: darkcyan;
+    color: white;
+    height: 50px;
+    font-size: 1.7em;
+    margin-bottom: .4em;
+}
+.grillas{
+    margin-bottom: 30px;
+}
+/* .row > [class^="col-"] {
+    border: 1px solid rgb(48,48, 48);
+} */
+.style-col{
+    border: 1px solid rgba(48, 48, 48, 0.87);
+    height: 55px;
+}
+.style-row{
+    margin-bottom: 50px;
+}
+h1{
+    text-align:center;
+}
+h2{
+    margin-left: 3em;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.alto{
+    margin-bottom: 50px;
+}
+.style-espac {
+    margin: 15px;
+}
+.space-img {
+    margin: 60px;
+}
+.card-title {
+    text-align: center;
+}
+.inicio {
+    text-decoration: none;
+    color: brown;
+    background-color: burlywood;
+}
+.inicio:hover {
+    background: black;
+    color: blanchedalmond;
+}
