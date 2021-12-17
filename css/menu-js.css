@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    background-image:url("../img/4613.jpg");
+    background-image:url("../img/thumb-1920-920300.jpg");
 }
 nav
 {
@@ -15,7 +15,7 @@ ul
 {
     list-style: none;
     position:absolute;
-    background: rgba(238, 66, 66, 0.747);
+    background: rgba(126, 123, 123, 0.747);
     width: 100%;
 
 }
@@ -38,7 +38,7 @@ a
 
 a:hover
 {
-    background: rgb(110, 2, 2);
+    background: rgb(63, 63, 63);
     transition: all 1,5s;
 }
 .sub-item
