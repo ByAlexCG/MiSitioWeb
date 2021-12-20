@@ -1,45 +1,41 @@
 "use strict"
 
-/* 
-Suma.............+
-Resta............-
-Multiplicacion...*
-Divicion........./
-Residuo..........% 
-*/
+/* Hallar el total (suma)*/
+var producto1 = 2560;
+var producto2 = 3520;
+var producto3 = 4680;
+var totalSuma = producto1 + producto2 + producto3;
+console.log ("La suma de los productos en: $" + totalSuma);
 
-/* Crear 3 productos, los inicializan con un valor*/
-/* A los tres productos les van a descontar el 5% */
-/* Existencia de cada producto y hallar el costo del inventario */
+/* Hallar el descuento (resta)*/
+var producto4 = 15600;
+var descuento = 3000;
+var totalConDescuento = producto4 - descuento;
+console.log("El valor total con el descuento incluido es: " + totalConDescuento);
 
-/* Crear 3 productos. Dichos productos seran inicializados con un valor. A cada
- producto le van a descontar el 5% y cada producto tiene una existencia. Al final
-determinar cual es el valor total del inventario teniendo en cuenta el descuento */
+/* Hallar el total (Multiplicando)*/
+var producto5 = 2420;
+var cantidadProducto = 5;
+var totalMultiplicacion = producto5 * cantidadProducto;
+console.log("El valor total de los 5 productos es: "+ totalMultiplicacion);
 
-/* declarando e iniciando los valores */
-var mouse = 60000;
-var teclado = 150000;
-var monitor = 200000;
-var cantMouse =40;
-var cantTeclado = 50;
-var cantMonitor =30;
+/* Hallar el promedio de calificaciones */
+var calificacion1 = 9.5;
+var calificacion2 = 8.2;
+var calificacion3 = 7.9;
+var totalCalificaciones = 3;
+var promedioFinal = (calificacion1 + calificacion2 + calificacion3) / totalCalificaciones;
+promedioFinal = promedioFinal.toFixed(2);
+console.log("El promedio final de calificaciones es: " + promedioFinal);
+console.log();
 
-/* Obteniendo el valor con descuento */
-var mouseConDes = mouse - (mouse * .05);
-console.log("Mouse Con Descuento" + "\n" + mouseConDes);
-var tecladoConDes = teclado - (teclado * .05);
-console.log("Teclado Con Descuento" + "\n" + tecladoConDes);
-var monitorConDes = monitor - (monitor * .05);
-console.log("Monitor Con Descuento" + "\n" + monitorConDes);
-var costoTotal = monitor + mouse + teclado;
-console.log("El costo total incluyendo descuento es de: $" + costoTotal );
-
-/* obteniendo el valor individual total */
-var costoTotal = (cantMouse * mouse);
-console.log("total de mouse" + "\n" + cantMouse);
-var costoTotal = cantTeclado * teclado;
-console.log("Total de teclados" + "\n" + cantTeclado);
-var costoTotal = cantMonitor * monitor; 
-console.log(" Total de monitores" + "\n" + cantMonitor);
-var costoTotal = monitor + mouse + teclado;
-console.log("El costo total incluyendo descuento es de: $" + costoTotal );
+/* Hallar el residuo */
+console.log("====Residuo====")
+var ahorros = 25011;
+var cantidadAportes = 102;
+var montoIndividual = 0;
+var sobrante = 0;
+/*Cuanto dinero corresponde a cada uno y cuanto sobra */
+var montoIndividual = parseInt(ahorros / cantidadAportes);
+console.log("El monto individua es de: " + montoIndividual)
+/*El signo de residuo es % */

@@ -1,44 +1,85 @@
 "use strict"
 
-var fechaActual = new Date();
-console.log(fechaActual);
+/* Imprimir fecha y hora del navegador */
+var currenTime = new Date();
+console.log(currenTime);
 
-/* metodos para descomponer la fecha */
+/* Desglosando fechas y horas */
+var anyo = currenTime.getFullYear();
+console.log("Año: " +anyo);
 
-var anyoActual = fechaActual.getFullYear();
-console.log("Año Actual: "+ anyoActual);
+ /* Desglosando fechas y horas */
+var mes = currenTime.getMonth();
+console.log("Mes: " + (mes + 1));
 
-var mesActual = fechaActual.getMonth();
-console.log("Mes Actual:"+ (mesActual + 1 ));
+ /* Desglosando fechas y horas */
+ var diaSemana = currenTime.getDay();
+ console.log("Dia Semana: " + diaSemana );
 
-var diaActual = fechaActual.getDate();
-console.log("Dia Actual:"+ diaActual);
+/* Desglosando fechas y horas */
+var dia = currenTime.getDate();
+console.log("Dia: " +dia);
 
-var diaSemana = fechaActual.getDay();
-console.log("Dia Semana:"+(diaSemana + 1));
+/* Desglosando fechas y horas */
+var hora = currenTime.getHours();
+console.log("Hora: " +hora);
 
-var horaActual = fechaActual.getHours();
-console.log("Hora Actual:"+ horaActual);
+/* Desglosando fechas y horas */
+var minutos = currenTime.getMinutes();
+console.log("Minutos: " +minutos);
 
-var minutosActual = fechaActual.getMinutes();
-console.log("Minutos Actual:"+ minutosActual)
+/* Desglosando fechas y horas */
+var segundos = currenTime.getSeconds();
+console.log("Segundos: " +segundos);
 
-var segundosActual = fechaActual.getSeconds();
-console.log("Segundos Actual:"+ segundosActual);
+/* Desglosando fechas y horas */
+var milisegundos = currenTime.getMilliseconds();
+console.log("Milisegundos: " +milisegundos);
 
-var milisegActual = fechaActual.getMilliseconds();
-console.log("Milisegundos Actual:"+ milisegActual);
+/* Desglosando fechas y horas */
+var milisegundos1970 = currenTime.getTime();
+console.log("Milisegundos transcurridos desde el año 1970: " +milisegundos1970);
 
-var ms1970 = fechaActual.getTime();
-console.log("MS desde 1970:"+ ms1970);
+var AdiaSemana = new Array();
+AdiaSemana[0] = "Domingo";
+AdiaSemana[1] = "Lunes";
+AdiaSemana[2] = "Martes";
+AdiaSemana[3] = "Miercoles"
+AdiaSemana[4] = "Jueves";
+AdiaSemana[5] = "Viernes";
+AdiaSemana[6] = "Sabado";
+/* Cambiar el numero del dia por texto */
+console.log ("Dia de la semana: "+ AdiaSemana [diaSemana]);
+/* Fecha: Jueves, 2 de Diciembre del año 2021 */
+var Ames = new Array();
+Ames[0] = "Enero";
+Ames[1] = "Febrero";
+Ames[2] = "Marzo";
+Ames[3] = "Abril"
+Ames[4] = "Mayo";
+Ames[5] = "Junio";
+Ames[6] = "Julio"
+Ames[7] = "Agosto"
+Ames[8] = "Septiembre"
+Ames[9] = "Octubre"
+Ames[10] = "Noviembre"
+Ames[11] = "Diciembre"
+console.log ("Fecha: " + AdiaSemana [diaSemana]+" " + dia + " de " + Ames [mes] + " Del año " + anyo);
 
-var diasSemana = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
-var diaSemanaStr = diasSemana[diaSemana];
+/*Determinar si ya termino el tiempo*/
+var fechaHoraLimite = new Date(Date.UTC(2022, 11, 9, 9, 30));
+fechaHoraLimite.setHours(8);
+console.log("Fecha y Hora de vencimiento: " + fechaHoraLimite);
 
-var mesAnyo = ["Enero", "Febrero", "Marzo", "Abril", ]
-
-
-console.log(("Hoy es: "+ diaSemanaStr) + ", "+ diaActual + (" ") + ("del mes") + (" ") + (mesActual + 1 ) + (" ") + ("del año ") + (anyoActual) + (". ") + ("Son las") + (" ") + (horaActual) + (":") + (minutosActual )); 
-/* console.log("Hoy es:"+ 10 del mes 12 del año 2021. Son las 16:40);  */
-
-/* especificar una  fecha para determinar la diferencia */
+if (anyo <= fechaHoraLimite.getFullYear() && 
+    mes <= fechaHoraLimite.getMonth() &&
+    hora <= fechaHoraLimite.getUTCHours() &&
+    minutos <= fechaHoraLimite.setMinutes()) {
+    console.log("Falta: " + (dia - fechaHoraLimite.getDate()) + "Dias, " +
+    (hora - fechaHoraLimite.getHours()) + "Horas, " + 
+    (fechaHoraLimite.getMinutes()- minutos) + "Minutos");
+    console.log("El envio fue realizado con exito")
+    } 
+    else {
+        console.log("Lo siento, la fecha de envio ya paso.")
+    }

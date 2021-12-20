@@ -1,17 +1,14 @@
 "use strict"
 
-var numero1 = 25.447896542
-var numero1Dec = numero1.toFixed(1);
-console.log(numero1Dec);
+/* Metodo toFixed para recortar decimales */
+var promedio = 2.56648228;
+promedio = promedio.toFixed(2);
+console.log(promedio);
 
-/* metodo slice */
-var numero1Str = numero1.toString();
-var digitosAntesPunto = 0;
-for(var i = 0; i < numero1Str.length; i++) {
-    if(numero1Str[i]==="."){
-        digitosAntesPunto = i;
-
-    }
-}
-console.log(numero1Str);
-console.log(numero1Str.slice(0, (digitosAntesPunto + 4)))
+/* Forzando el redondo */
+/* Metodo slice para redondear */
+var promedio2 = 2.56648228;
+var promedio2Str = promedio2.toString();
+var promedio2Conv = promedio2Str.slice(0, 4);
+var promedio2Conv = parseFloat(promedio2Conv);
+console.log(promedio2Conv)

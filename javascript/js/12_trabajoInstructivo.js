@@ -1,3 +1,23 @@
+
+var ciudad1= "pitalito";
+ciudad1=ciudad1.toUpperCase();
+console.log (ciudad1);
+
+ciudad1=ciudad1.toLowerCase();
+console.log(ciudad1)
+
+var nombre="Jhon Alexander Castano ";
+nombre=nombre.toUpperCase();
+console.log(nombre);
+
+nombre=nombre.toLowerCase();
+console.log(nombre);
+
+
+
+nombre=nombre[0].toUpperCase()+nombre.slice(1);
+console.log(nombre)
+
 var anyo2= "2019";
 var auxConsecitivo = anyo2.slice(2,4);
 console.log(auxConsecitivo)
@@ -14,4 +34,7 @@ for (i=0; i < nombres.length; i++){
         break;
     }
 }
+
+
+
 
