@@ -1,0 +1,30 @@
+.container {
+    width: 20%;
+    margin: 80px;
+    padding: 40px;
+    border: solid 1px black;
+  }
+  .boton {
+    margin-top: 10px;
+  }
+  #aumentar, #disminuir{
+    content: "\002B";
+    font-size: 30px; 
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+  }
+  span {
+    font-size: 20px; 
+  }
+  input {
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: none;
+  }
+  .box1 {
+    background-color: yellow;
+    padding-top: 3px;
+  }
