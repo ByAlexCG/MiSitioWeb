@@ -1,24 +1,29 @@
+"use-strict"
 
-	let inicio = 0;
-	let cantidad = "";
-	
+let contador = 1;
+let numUnidades = "";
+let numProductos
+let precio = 29000/* document.getElementById('precioEstable').innerHTML */;
+let costoTotal
 
-	function aumentar(){
-	    if( inicio <= 9) {
-	        cantidad = document.getElementById('cantidad').value = ++inicio;
-	        document.getElementById("total").innerHTML = cantidad;
-	    }
-	    calcularTotal();
-	}
-	 
-	function disminuir() {
-	    if(inicio >= 1) {
-	        cantidad = document.getElementById('cantidad').value = --inicio;
-	    }
-	}
-	function calcularTotal() {
-	    let valorUnidad = document.getElementById("valorUnitario").innerHTML;
-	    let cantidadElementos = document.getElementById("total").innerHTML;
-	    let valorCompra = valorUnidad * cantidadElementos;
-	    document.getElementById("multiplicar").innerHTML = valorCompra;
-	}
+function aumentar(){
+
+    if(contador < 10) {
+        numUnidades = document.getElementById('numUnidades').value = ++contador;
+
+        numProductos = document.getElementById('numProductos').innerHTML = contador;
+
+        costoTotal = document.getElementById('subtotal').innerHTML = precio * contador;
+    }
+}
+
+function disminuir(){
+
+    if(contador > 1) {
+        numUnidades = document.getElementById('numUnidades').value = contador--;
+
+        numProductos = document.getElementById('numProductos').innerHTML = contador;
+
+        costoTotal = document.getElementById('subtotal').innerHTML = precio * contador;
+    }
+}

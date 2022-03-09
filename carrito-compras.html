@@ -9,30 +9,40 @@
     <script src="javascript/js/carrito-compras.js"></script>
 </head>
 <body>
-    	    <!-- <input  onclick="mostrarNuevoNombre();" type="button" value="Mostrar Nuevo Nombre">
-	    <input  onclick="mostrarNombreAntiguo();" type="button" value="Mostrar Nombre Antiguo">
-	    <label id="mostrarNombre" >Evelin</label> <br><br> -->
-	    <!-- <div class="container">
-	        <label class="resaltar">Subtotal cop <span id="multiplicar" class="punto">0</span></label>
-	        <div class="box1">
-	            <label class="resaltar">Proceder al pago ( <span id="total" class="punto">0</span> productos)</label>
-	        </div>
-	        <div class="imagen">
-	            <img src="img/412b27c03167a2bfadbc3971f93c5006.jpg" alt="">
-	        </div>
-	        <div class="texto"><p class="texto"> El príncipe es un tratado político del siglo XVI del diplomático y teórico político italiano Nicolás Maquiavelo. Según la correspondencia de Maquiavelo, una versión parece haber sido distribuida en 1513, usando el título en latín De Principatibus.​<br><br><br>
-	        <label id="valorUnitario">29000</label></p></div> -->
-	    <div class="boton">
-	        <button id="aumentar" onclick="aumentar();">+</button>
-	        <input type="text" id="cantidad" value="0">
-	        <button id="disminuir" onclick="disminuir();">- </button>
-	        
-	
-
-	    </div>
-	
-
-	    </div>
+	<div class="principal">
+        <div class="parteSuperior">
+            <h2>Subtotal   COP <span id="subtotal">29000</span></h2>
+            <div class="pagoProductos">
+                <h2>Proceder al pago (<span id="numProductos">1</span> Productos)</h2>
+            </div>
+        </div>
+        <div class="divisionCaratula">
+            <div class="caratula"></div>
+            <div class="descripcion">
+                <h1>El Principe</h1><br>
+                <h2>Maquiavelo</h2><br>
+                <h2>COP <span id="precioEstable">29000</span></h2>
+            </div>
+        </div>
+        <div class="parteInferior">
+            <div class="cantidadUnidades">
+                <div class="suma" onclick="disminuir();"></div>
+                <input readonly class="numeroUnidades" type="text" id="numUnidades" value="1">
+                <div class="resta" onclick="aumentar();"></div>
+            </div>
+            <div class="otrasOpciones">
+                <div class="eliminar">
+                    <h2>Eliminar</h2>
+                </div>
+                <div class="guardar">
+                    <h2>Guardar para mas tarde</h2>
+                </div>
+            </div>
+        </div>
+        <div class="guardar-screen">
+            <h2>Guardar para mas tarde</h2>
+        </div>
+    </div>
 
 </body>
 </html>
