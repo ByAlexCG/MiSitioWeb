@@ -20,7 +20,7 @@ function aumentar(){
 function disminuir(){
 
     if(contador > 1) {
-        numUnidades = document.getElementById('numUnidades').value = contador--;
+        numUnidades = document.getElementById('numUnidades').value = --contador;
 
         numProductos = document.getElementById('numProductos').innerHTML = contador;
 
