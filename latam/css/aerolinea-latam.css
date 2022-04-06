@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #ededed;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background: #ee8a8a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoMenu {
+    margin-left: 80px;
+}
+
+
+.logoAvion {
+    margin-right: 80px;
+}
+
+.logoAvion i {
+    font-size: 1.6em;
+    padding: 8px;
+    color: #333;
+}
+
+.logoAvion i:hover {
+    transition: all 3ms;
+    background: rgb(243, 69, 69);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.mainContent {
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* .mostrarVuelos{
+
+} */
+.style-contentVuelo {
+    border: 1px solid red;
+    border-radius: 10px;
+    display: grid;
+    grid-template: "styleOrigen     styelOrigen      styleDestino" 25px
+                   "stylePrecio     styleDirecto     empty"        25px
+                   "styleHoraSalida styleHoraLlegada styleEconomico"/
+                    1fr                 1fr                  1fr; 
+    margin-bottom: 50px;
+    border: 1px solid red;
+    border-radius: 10px;
+
+}
+.styleOrigen {
+    grid-area: styleOrigen;
+    font-size: 1.5em;
+    text-align: right;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.styleDestino {
+    grid-area: styleDestino;
+    font-size: 1.5em;
+    text-align: right;
+    display: grid;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.stylePrecio {
+    grid-area: stylePrecio;
+    font-size: 1.5em;
+    display: grid;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.styleDirecto {
+    grid-area: styleDirecto;
+    font-size: 1.5em;
+    display: grid;
+    justify-content: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: 1px solid mediumseagreen;
+    border-radius: 10px;
+}
+.styleHoraSalida{
+    grid-area: styleHoraSalida;
+    font-size: 1.5em;
+    text-align: right;
+    display: grid;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.styleHoraLlegada{
+    grid-area: styleHoraLlegada;
+    font-size: 1.5em;
+    text-align: justify;
+    display: grid;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.styleEconomico{
+    grid-area: styleEconomico;
+    font-size: 1.5em;
+    display: grid;
+    margin-right: 50px;
+    margin-left: 50px;
+}
