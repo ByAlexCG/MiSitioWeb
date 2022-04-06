@@ -24,8 +24,8 @@ let vuelo = [{
     "origen": "BGT",
     "destino": "CTG",
     "precio": 375000,
-    "horaSalida":horaSalida.getHours() + horaSalida.getMinutes(),
-    "horaLlegada":horallegada.getHours() + horallegada.getMinutes(),
+    "horaSalida":horaSalida.getHours() + ":" + horaSalida.getMinutes(),
+    "horaLlegada":horallegada.getHours() + ":" + horallegada.getMinutes(),
     "directo":"Directo",
     "economico":"Mas economico",
 },
@@ -33,8 +33,8 @@ let vuelo = [{
     "origen": "BGT",
     "destino": "CTG",
     "precio": 515000,
-    "horaSalida":horaSalida3.getHours() + horaSalida3.getMinutes(),
-    "horaLlegada":horaLlegada3.getHours() + horaLlegada3.getMinutes(),
+    "horaSalida":horaSalida3.getHours() + ":" + horaSalida3.getMinutes(),
+    "horaLlegada":horaLlegada3.getHours() + ":" + horaLlegada3.getMinutes(),
     "directo":"Directo",
     "economico":"Mas economico",
 },
@@ -42,15 +42,17 @@ let vuelo = [{
     "origen": "BGT",
     "destino": "CTG",
     "precio": 415000,
-    "horaSalida":horaSalida2.getHours() + horaSalida2.getMinutes(),
-    "horaLlegada":horaLlegada2.getHours() + horaLlegada2.getMinutes(),
+    "horaSalida":horaSalida2.getHours() + ":" + horaSalida2.getMinutes(),
+    "horaLlegada":horaLlegada2.getHours() + ":" + horaLlegada2.getMinutes(),
     "directo":"Directo",
     "economico":"Mas economico",
 }];
 function mostrarVuelos(){
     for(let i = 0; i < vuelo.length; i++){
-    cargarVuelos(vuelo[i].origen, vuelo[i].destino, vuelo[i].precio, vuelo[i].horaSalida, vuelo[i].horaLlegada, vuelo[i].directo, vuelo[i].economico);
-}}
+
+        cargarVuelos(vuelo[i].origen, vuelo[i].destino, vuelo[i].precio, vuelo[i].horaSalida, vuelo[i].horaLlegada, vuelo[i].directo, vuelo[i].economico);
+    }
+}
 function cargarVuelos(origen,destino,precio,horaSalida,horaLlegada,directo,economico) {
     let contentVuelo = document.createElement("div");
     let contentPrincipal = document.getElementById("mainContent");
