@@ -19,6 +19,12 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+/* div{
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid rgb(48,48,48.8);
+} */
 .logoMenu {
     margin-left: 80px;
 }
@@ -40,81 +46,71 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
-.mainContent {
-    padding: 40px;
+.mainContentClass {
+    padding: 10px;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+
+    
 }
-/* .mostrarVuelos{
-
-} */
-.style-contentVuelo {
-    border: 1px solid red;
-    border-radius: 10px;
+div {
+    display: block;
+}
+.contentVuelo {
     display: grid;
-    grid-template: "styleOrigen     styelOrigen      styleDestino" 25px
-                   "stylePrecio     styleDirecto     empty"        25px
-                   "styleHoraSalida styleHoraLlegada styleEconomico"/
+    margin-bottom: 50px;   
+    margin-top: 30px;    
+    margin-left: 30px;                
+    margin-right: 30px;                
+    border: 1px solid rgb(48,48,48.8);                
+    border-radius: 10px; 
+    width: 90%;
+    height: 100px;  
+    
+    grid-template: "styleOrigen     styleOrigen      styleDestino" 30px
+                   "stylePrecio     styleDirecto     styleDirecto"        30px
+                   "styleHoraSalida styleHoraLlegada styleEconomico" 30px/
                     1fr                 1fr                  1fr; 
-    margin-bottom: 50px;
-    border: 1px solid red;
-    border-radius: 10px;
-
+    /* grid-template: "styleOrigen     styleOrigen   styleDestino " 80px
+                   "stylePrecio     styleDirecto   styleDirecto" 80px /
+                    1fr            1fr           1fr; */
+                                          
 }
 .styleOrigen {
     grid-area: styleOrigen;
     font-size: 1.5em;
-    text-align: right;
-    margin-left: 50px;
-    margin-right: 50px;
+    
 }
-.styleDestino {
+ .styleDestino {
     grid-area: styleDestino;
     font-size: 1.5em;
     text-align: right;
-    display: grid;
-    margin-right: 50px;
-    margin-left: 50px;
+  
 }
 .stylePrecio {
     grid-area: stylePrecio;
     font-size: 1.5em;
-    display: grid;
-    margin-right: 50px;
-    margin-left: 50px;
+  
 }
 .styleDirecto {
     grid-area: styleDirecto;
     font-size: 1.5em;
-    display: grid;
-    justify-content: center;
-    margin-right: 50px;
-    margin-left: 50px;
-    border: 1px solid mediumseagreen;
-    border-radius: 10px;
+   
 }
 .styleHoraSalida{
     grid-area: styleHoraSalida;
     font-size: 1.5em;
-    text-align: right;
-    display: grid;
-    margin-right: 50px;
-    margin-left: 50px;
+    
 }
 .styleHoraLlegada{
     grid-area: styleHoraLlegada;
     font-size: 1.5em;
-    text-align: justify;
-    display: grid;
-    margin-right: 50px;
-    margin-left: 50px;
+ 
 }
 .styleEconomico{
     grid-area: styleEconomico;
     font-size: 1.5em;
-    display: grid;
-    margin-right: 50px;
-    margin-left: 50px;
+
 }

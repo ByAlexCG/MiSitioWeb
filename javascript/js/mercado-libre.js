@@ -117,7 +117,7 @@ let toyota = new Automovil ("Acer ", "Nitro Core I5 Gtx 1650 ", "$4.200.000", "i
 
 let toyota2 = new Automovil ("Acer ", "Aspire 5 A514-53 silver 14 ", "$2.000.000", "img/D_NQ_NP_2X_982191-MLA46754996012_072021-F.jpg");
 
-let toyota3 = new Automovil ("Acer ", "Predator Helios 300", "$5.470.000", "img/D_NQ_NP_2X_709781-MCO41386350854_042020-F.jpg");
+let toyota3 = new Automovil ("Acer ", "Predator Helios 300", "$5.470.000", "img/Predator.jpg");
 
 function mostrarToyota () {
 

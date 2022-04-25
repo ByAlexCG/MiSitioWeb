@@ -81,7 +81,7 @@ body {
     flex-wrap: wrap;
 }
 
-.contenidoIndividual {
+/* .contenidoIndividual {
     background: #fff;
     border-radius: 15px;
     width: 300px;
@@ -89,7 +89,7 @@ body {
     cursor: pointer;
     border-radius: 8px;
     max-width: 1200px;
-}
+} */
 
 .imagen {
     display: flex;
@@ -115,4 +115,19 @@ body {
 .precio {
     display: block;
     font-size: 1.2em;
+}
+.contenidoIndividual {
+    display: grid;
+    grid-template: "imagen imagen descripcion"             auto
+                   "imagen imagen descripcion"/       25px
+                    3fr                 4fr           ; 
+    margin-bottom: 50px;
+    margin-left: 20px;
+
+}
+.imagen{
+    grid-area: imagen;
+}
+.descripcion{
+    grid-area: descripcion;
 }

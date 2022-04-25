@@ -6,8 +6,8 @@
     let horaSalida2 = new Date(2022, 4, 5, 9, 10, 0);
     let horaLlegada2 = new Date(2022, 4, 5, 1, 10, 0);
 
-    let horaSalida3 = new Date(2022, 4, 5, 0, 0, 0);
-    let horaLlegada3 = new Date(2022, 4, 5, 0, 0, 0);
+    let horaSalida3 = new Date(2022, 4, 5, 3, 30, 0);
+    let horaLlegada3 = new Date(2022, 4, 5, 4, 20, 0);
 
  class vuelos{
     constructor(origen,destino,precio,horaSalida,horaLlegada,directo,economico){
@@ -21,8 +21,8 @@
     }
  }
 let vuelo = [{
-    "origen": "BGT",
-    "destino": "CTG",
+    "origen": "Bogota",
+    "destino": "Cartagena",
     "precio": 375000,
     "horaSalida":horaSalida.getHours() + ":" + horaSalida.getMinutes(),
     "horaLlegada":horallegada.getHours() + ":" + horallegada.getMinutes(),
@@ -30,8 +30,8 @@ let vuelo = [{
     "economico":"Mas economico",
 },
 {
-    "origen": "BGT",
-    "destino": "CTG",
+    "origen": "Bogota",
+    "destino": "Cartagena",
     "precio": 515000,
     "horaSalida":horaSalida3.getHours() + ":" + horaSalida3.getMinutes(),
     "horaLlegada":horaLlegada3.getHours() + ":" + horaLlegada3.getMinutes(),
@@ -39,8 +39,8 @@ let vuelo = [{
     "economico":"Mas economico",
 },
 {
-    "origen": "BGT",
-    "destino": "CTG",
+    "origen": "Bogota",
+    "destino": "Cartagena",
     "precio": 415000,
     "horaSalida":horaSalida2.getHours() + ":" + horaSalida2.getMinutes(),
     "horaLlegada":horaLlegada2.getHours() + ":" + horaLlegada2.getMinutes(),
@@ -55,12 +55,13 @@ function mostrarVuelos(){
 }
 function cargarVuelos(origen,destino,precio,horaSalida,horaLlegada,directo,economico) {
     let contentVuelo = document.createElement("div");
-    let contentPrincipal = document.getElementById("mainContent");
+    let contentPrincipal = document.getElementById("mainContentID");
     contentPrincipal.appendChild(contentVuelo);
-    contentPrincipal.setAttribute("class", "contentVuelo")
+    contentVuelo.setAttribute("class", "contentVuelo")
 
     let contentOrigen = document.createElement("div");
-    contentVuelo.appendChild(contentOrigen);    
+    contentVuelo.appendChild(contentOrigen);
+   
 
     let origenVuelo = document.createElement("label");
     contentVuelo.appendChild(origenVuelo);

@@ -250,7 +250,43 @@ body {
     font-size:.8em ;
 }
 .img-avatar{
-    width: ;
+    width: 50px;
+    height: 50px;
+}
+.img-avatar img{
+    border-radius: 50px;
+}
+.footer{
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0/20%) -1px 2px 7px 0px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+}
+.footer input{
+    width: 80%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+.footer input::placeholder{
+    font-style: italic;
+}
+footer div{
+    height: 100%;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer div img{
+    border-radius: 50%;
+    width: 70%;
+    height: 70%;
+    cursor: pointer;
 }
 @media screen and (max-width: 480px){
     .chat-box-out {
